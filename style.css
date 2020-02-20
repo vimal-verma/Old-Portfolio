@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+}
+#pic{
+    text-align: center;
+}
+#up-man {
+    animation: ups 3s infinite;
+    transform-origin: center;
+}
+@keyframes ups {
+    0%{
+        transform: rotateZ(-3deg)
+    }
+    50%{
+        transform: rotateZ(3deg)
+    }
+    100%{
+        transform: rotateZ(-3deg)
+    }    
+}

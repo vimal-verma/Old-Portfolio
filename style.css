@@ -24,3 +24,18 @@ body {
         transform: rotateZ(-3deg)
     }    
 }
+#right-man {
+    animation: line 3s infinite;
+    transform-origin: center;
+}
+@keyframes line {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }    
+}

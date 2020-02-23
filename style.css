@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 #up-man {
-    animation: ups 3s infinite;
+    animation: ups 4s infinite;
     transform-origin: center;
 }
 @keyframes ups {
@@ -39,3 +39,23 @@ body {
         transform: translateX(0px);
     }    
 }
+
+/* #man {
+    animation: non 3s infinite;
+    transform-origin: center;
+}
+@keyframes non {
+    0%{
+        display: none;
+    }
+    50%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }    
+} */
+
+/* #man{
+    display: none;
+} */

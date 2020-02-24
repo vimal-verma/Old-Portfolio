@@ -66,3 +66,16 @@ body {
 /* #man{
     display: none;
 } */
+
+button{
+    border: none;
+}
+#project{
+    background-color: aqua;
+}
+#about{
+    background-color: blueviolet;
+}
+#contact{
+    background-color: blue;
+}

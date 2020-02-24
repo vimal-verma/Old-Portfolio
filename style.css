@@ -47,35 +47,40 @@ body {
     }    
 }
 
-/* #man {
-    animation: non 3s infinite;
+#man {
+    animation: man 10s infinite;
     transform-origin: center;
 }
-@keyframes non {
+@keyframes man {
     0%{
-        display: none;
+        transform: translateX(1400px);
     }
     50%{
-        display: none;
+        transform: translateX(0px);
     }
     100%{
-        display: none;
+        transform: translateX(1400px);
     }    
-} */
+}
 
-/* #man{
-    display: none;
-} */
+#mobile {
+    animation: mobile 10s infinite;
+    transform-origin: center;
+}
+@keyframes mobile {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-1400px);
+    }
+    100%{
+        transform: translateX(0px);
+    }    
+}
 
 button{
-    border: none;
-}
-#project{
-    background-color: aqua;
-}
-#about{
-    background-color: blueviolet;
-}
-#contact{
-    background-color: blue;
+    background-color: aquamarine;
+    padding: 0 10px;
+    
 }

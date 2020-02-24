@@ -1,19 +1,16 @@
 // $("#man").css({"display": "none"});
 
-$("#mobile").hide();
+// $("#mobile").hide();
 
   function project() {
-    var myWindow = window.open("", "MsgWindow", "width=800%,height=500%");
-    myWindow.document.write(" <h1>Hello world</h1> ");
+    var myWindow = window.open("project.html", "MsgWindow", "width=800%,height=500%");
   }
 
-  function About() {
-    var myWindow = window.open("", "MsgWindow", "width=800%,height=500%");
-    myWindow.document.write("<p>Hi!, i am vimal</p><h1>vimal</h1> <a>face</a>");
+  function about() {
+    var myWindow = window.open("about.html", "MsgWindow", "width=800%,height=500%");
   }  
 
 
   function contact() {
-    var myWindow = window.open("", "MsgWindow", "width=800%,height=500%");
-    myWindow.document.write("<p>Hi!, i am vimal</p>");
+    var myWindow = window.open("contact.html", "MsgWindow", "width=800%,height=500%");
   }  

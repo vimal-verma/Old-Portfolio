@@ -14,3 +14,4 @@
   function contact() {
     var myWindow = window.open("contact.html", "MsgWindow", "width=800%,height=500%");
   }  
+  

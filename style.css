@@ -1,3 +1,7 @@
+:root {
+--bg: #1a3c5f;
+}
+
 @font-face {
   font-family: 'Jungle_Roar';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/Jungle_Roar_Bold.ttf') format('truetype');
@@ -5,7 +9,7 @@
   font-display: swap;
 }
 body {
-  background: #1a3c5f;
+  background: var(--bg);
   font-family: 'Jungle_Roar';
   color: azure;
 }
@@ -27,8 +31,8 @@ header{
   height: 100%;
   position: relative;
 }
-img{
-  width: 100%;
+.right > img{
+  width: 70%;
 }
 .icon{
   position: relative;
@@ -37,12 +41,12 @@ img{
   border-radius: 50%;
   background-color: azure;
   font-size: 100px;
-  color: #1a3c5f;
+  color: var(--bg);
 }
 .icon > i{
   position: absolute;
   padding: 50px;
-  color: #1a3c5f;
+  color: var(--bg);
 }
 .main{
   display: flex;
@@ -73,9 +77,11 @@ footer{
   margin: 50px;
   background-color: azure;
   border-radius: 20px;
-  color: #1a3c5f;
+  color: var(--bg);
   padding: 20px;
-  box-shadow: 15px 10px 5px #4b6b8a;;
+  text-align: center;
+  box-shadow: 15px 10px 15px #808299,
+              -15px -10px 10px #174675
 }
 
 
@@ -90,7 +96,7 @@ footer{
   box-shadow: 4px 5px 2px #4b6b8a;
 }
 .sm > i{
-  color: #1a3c5f;
+  color: var(--bg);
   padding: 17px;
 }
 nav{
@@ -100,7 +106,7 @@ nav{
   text-align: center;
   position: sticky;
   top: 10px;
-  background-color: #1a3c5f;
+  background-color: var(--bg);
 }
 .nav-item{
   margin: 20px;
@@ -146,6 +152,7 @@ input, textarea, form>button{
   }
   .right{
     width: 100%;
+    text-align: center;
   }
 
   .left-footer{
@@ -164,4 +171,9 @@ input, textarea, form>button{
   .icon > i{
     padding: 25px;
   }
+}
+.project-item > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

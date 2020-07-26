@@ -37,35 +37,41 @@ gsap.timeline({
     scrollTrigger: {
       trigger: ".main",
       pin: false,   // pin the trigger element while active
-      start: "top center", // when the top of the trigger hits the top of the viewport
+      start: "top bottom", // when the top of the trigger hits the top of the viewport
       end: "bottom center", // end after scrolling 500px beyond the start
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       markers: false,
     }
   })
-  .from(".main", {opacity: 0})
+  .from(".main", {scale:0.8})
+  .from(".main", {opacity:0.5})
 
   gsap.timeline({
     scrollTrigger: {
       trigger: ".project",
       pin: false,   // pin the trigger element while active
-      start: "top center", // when the top of the trigger hits the top of the viewport
+      start: "top bottom", // when the top of the trigger hits the top of the viewport
       end: "bottom center", // end after scrolling 500px beyond the start
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       markers: false,
     }
   })
-  .from(".project", {opacity: 0})
+  .from(".project", {scale:0.8})
+  .from(".project", {opacity:0.5})
 
  gsap.timeline({
     scrollTrigger: {
       trigger: "footer",
       pin: false,   // pin the trigger element while active
-      start: "top center", // when the top of the trigger hits the top of the viewport
+      start: "top bottom", // when the top of the trigger hits the top of the viewport
       end: "bottom center", // end after scrolling 500px beyond the start
       scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
       markers: false,
     }
   })
-  .from("footer", {opacity: 0})
-  // .from(".sm", {scale: 0.8})
+  .from("footer", {scale:0.8})
+  .from("footer", {opacity:0.5})
+
+
+  gsap.from(".right", {y: -500, duration: 3});
+  gsap.from(".left", {x: -500, duration: 2, delay : 1});

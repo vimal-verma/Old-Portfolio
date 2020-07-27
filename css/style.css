@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #12181b;
+    cursor: none;
+    color: aliceblue;
+  }
+  canvas {
+    display: block;
+  }
+  header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+  .scroll{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: scroll;
+      scroll-behavior: smooth;
+  }
+  a > img {
+      height: 200px;  
+      margin: 30px;
+  }
+  i{
+    font-size: 50px;
+    color: aliceblue;
+    padding: 5px;
+    margin: 20px;
+  }
+
+
+
+
+/* Hide the second piece of text by default */
+p.hovertext .hide {
+    display:none;
+    background-color: black;
+    padding: 2px 4px;
+    border-radius: 20%;
+}   
+
+/* Re-show the second piece of text on hover */
+p.hovertext:hover .hide {
+   display:inline;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+img {
+    height: 50px;
+}
+
+
+.home{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.skill{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.project{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.Social{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.contact{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.about{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.hide-class{
+    visibility: hidden;
+}

@@ -1,8 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #12181b;
-    cursor: none;
+    background-color: #c800dc;
+    cursor: url('../img/cursor.cur'), auto;
     color: aliceblue;
   }
   canvas {
@@ -14,7 +14,7 @@ html, body {
     flex-direction: row;
   }
   nav{
-      width: 12vw;
+      width: 20vw;
   }
   .scroll{
       position: relative;
@@ -23,6 +23,9 @@ html, body {
       height: 75vh;
       overflow: scroll;
       scroll-behavior: smooth;
+  }
+  i:hover{
+    color: aqua;
   }
   a > img {
       height: 20vh;  
@@ -39,19 +42,90 @@ html, body {
         width: 100%;
     }
     .content{
-        width: 88vw;
+        width: 80vw;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    .home{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .about{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .skill{
+      width: 100%;
+    }
+    .skills{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-flow: wrap;
+    }
+    .icon > i{
+      font-size: 100px;
+    }
+    .skill-item{
+      width: 200px;
+    }
 
 
+    .social{
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+    }
+    .sm{
+      padding: 10px;
+    }
 
+    .contact{
+      width: 100%;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding: 10px;
+      justify-content: flex-end;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    input, textarea, form>button{
+      padding: 10px;
+      margin: 20px;
+    }
 
+    .project{
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      align-items: center;
+    }
 
-
-
+    .project-item{
+      height: 350px;
+      background-color: black;
+      margin: 20px;
+      width: 300px;
+      padding: 20px;
+      border-radius: 30px;
+      align-items: center;
+    }
+    .project-item > img{
+      width: 100%;
+    }
 
 
 
@@ -69,6 +143,7 @@ p.hovertext .hide {
 /* Re-show the second piece of text on hover */
 p.hovertext:hover .hide {
    display:inline;
+   color: aqua;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

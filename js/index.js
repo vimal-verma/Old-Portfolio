@@ -1,7 +1,7 @@
 
 function setup() {
     createCanvas(window.innerWidth , window.innerHeight);
-    background('#12181b');
+    background('#c800dc');
   }
   
   function draw() {
@@ -9,6 +9,33 @@ function setup() {
     fill(220,220,0, 50);
     circle(mouseX,mouseY,20,20);
   }
+
+// Social Media
+document.querySelector('.twitter').addEventListener('click', () => window.location.href = "https://twitter.com/vimalverma558")
+document.querySelector('.facebook').addEventListener('click', () => window.location.href = "https://facebook.com/vimalverma558")
+document.querySelector('.github').addEventListener('click', () => window.location.href = "https://github.com/vimalverma558")
+document.querySelector('.instagram').addEventListener('click', () => window.location.href = "https://instagram.com/vimalverma558")
+document.querySelector('.dev').addEventListener('click', () => window.location.href = "https://dev.to/vimal")
+document.querySelector('.linkedin').addEventListener('click', () => window.location.href = "https://www.linkedin.com/in/vimalverma558/")
+document.querySelector('.dribbble').addEventListener('click', () => window.location.href = "https://dribbble.com/vimalverma")
+document.querySelector('.mail').addEventListener('click', () => window.location.href = 'mailto:kumarvimal558@gmail.com')
+
+//  form
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const name= form.name.value;
+console.log(name)
+const email= form.email.value;
+console.log(email)
+const message= form.message.value;
+console.log(message);
+window.location.href = 'mailto:kumarvimal558@gmail.com?subject=Hi, I am -' + name + ' (' + email + ')' + '&body=' + message +'&cc=vimal@letskhabar.com&bcc='+email;
+})
+
+
+
+
 
   const HomeIcon = document.querySelector('.home-icon');
   const SkillIcon = document.querySelector('.skill-icon');
@@ -87,10 +114,6 @@ function setup() {
 
   GithubIcon.addEventListener('click', () => window.location.href = "https://github.com/vimalverma558");
   DevIcon.addEventListener('click', () => window.location.href = "https://dev.to/vimal")
-
-
-
-
 
 
 

@@ -112,9 +112,6 @@ window.location.href = 'mailto:kumarvimal558@gmail.com?subject=Hi, I am -' + nam
     Contact.classList.remove('hide-class')
   })
 
-  GithubIcon.addEventListener('click', () => window.location.href = "https://github.com/vimalverma558");
-  DevIcon.addEventListener('click', () => window.location.href = "https://dev.to/vimal")
-
 
 
 

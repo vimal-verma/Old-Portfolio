@@ -13,17 +13,20 @@ html, body {
     display: flex;
     flex-direction: row;
   }
+  nav{
+      width: 12vw;
+  }
   .scroll{
       position: relative;
       display: flex;
       flex-direction: column;
-      height: 100vh;
+      height: 75vh;
       overflow: scroll;
       scroll-behavior: smooth;
   }
   a > img {
-      height: 200px;  
-      margin: 30px;
+      height: 20vh;  
+      margin: 2vh;
   }
   i{
     font-size: 50px;
@@ -31,6 +34,26 @@ html, body {
     padding: 5px;
     margin: 20px;
   }
+
+    nav > img {
+        width: 100%;
+    }
+    .content{
+        width: 88vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,49 +81,9 @@ p.hovertext:hover .hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-img {
-    height: 50px;
-}
-
-
-.home{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.skill{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.project{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.Social{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.contact{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.about{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
 
 .hide-class{
     visibility: hidden;
+    width: 0px;
+    height: 0px;
 }

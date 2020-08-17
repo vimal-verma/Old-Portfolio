@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-part{
+    width: 40vw;
+    display: block;
+}
+.text-part .text{
+    margin: 10%;
+    margin-top: 10%;
+}
+.img-part{
+    width: 60vw;
+}
+@media (max-width: 768px)  {
+    .main{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .text-part{
+        width: 100vw;
+    }
+    .text-part .text{
+        margin-top: 0%;
+    }
+    .img-part{
+        width: 100vw;
+    }
+}
+.button{
+    background-color: aqua;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}

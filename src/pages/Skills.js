@@ -1,28 +1,46 @@
 import React, { Component } from "react";
 import Nav from '../components/Nav';
 import Footer from '../components/Footer'
-import DevTool from '../components/DevTool';
-import Designtool from '../components/DesignTool'
+import { BlogData } from '../Name'
 import skills from '../assets/img/skill.svg'
+import Blog from "../components/Blog";
 
 class Skills extends Component {
     render() {
+
+      const BioList = BlogData.Blog_Bio.map(
+        Dev=> (
+          <div key={Dev.id}>
+          <p><span role="img" aria-label="Heart">⚡</span> {Dev}</p>
+          </div>
+
+      )
+      )
+
+
+    let ShowBlog;
+    if (BlogData.show_Blog) {
+      ShowBlog = <Blog/>;
+    } else {
+      ShowBlog = ""
+    }
+      
+
       return (
         <div>
           <Nav/>
           <div className="main">
           <div className="text-part" >
           <div className="text">
-          <h1><span role="img" aria-label="Heart">⚡</span> Full Stack Development</h1>
-          <DevTool />
-          <h1><span role="img" aria-label="Heart">⚡</span> Design</h1>
-          <Designtool />
+          {BioList}
             </div>
           </div>
           <div className="img-part" >
             <img src={skills} alt="Skills" />
           </div>
           </div>
+          <br/>
+          {ShowBlog}
           <br/>
           <Footer/>
         </div>

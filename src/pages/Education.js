@@ -1,25 +1,30 @@
 import React, { Component } from "react";
 import Nav from '../components/Nav';
-import Footer from '../components/Footer'
-import education from '../assets/img/clip-work-searches.svg'
-import './education.css'
+import Footer from '../components/Footer';
+import education from '../assets/img/clip-work-searches.svg';
+import './education.css';
+import Card from '../components/CertiCard'
+import { greeting, EducationBio } from '../Name'
 
 class Education extends Component {
     render() {
+      const EduList = EducationBio.map(
+        Edu=> (
+          <div key={Edu}>
+          <p><span role="img" aria-label="Heart">⚡</span> {Edu}</p>
+          </div>
+
+      )
+      )
       return (
         <div>
           <Nav/>
           <div className="main">
           <div className="text-part" >
           <div className="text">
-            <h1>Hi, I'm Vimal Kumar</h1>
+            <h1>{greeting.title}</h1>
             <div className="edu">
-              <h3 className="edu-item1"><span role="img" aria-label="Heart">⚡</span> High School Makhdumpur</h3>
-              <p className="edu-item2">10th in 2015</p>
-              <h3 className="edu-item1"><span role="img" aria-label="Heart">⚡</span> Gaya Evening College, Gaya</h3>
-              <p className="edu-item2">12th in 2017</p>
-              <h3 className="edu-item1"><span role="img" aria-label="Heart">⚡</span> Indian Institute of Information Technology Ranchi</h3>
-              <p className="edu-item2">CSE ( B.Tech ) From 2018</p>
+              {EduList}
             </div>
             <br/>
             <br/>
@@ -29,6 +34,9 @@ class Education extends Component {
             <img src={education} alt="about" />
           </div>
           </div>
+          <br/>
+          <h1>My certificate</h1>
+          <Card />
           <Footer/>
         </div>
       );

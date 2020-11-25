@@ -1,15 +1,25 @@
 import React, { Component } from "react";
 import { NavLink,Link } from 'react-router-dom'; 
-import vimal from '../assets/img/vimal.svg'
+import { BlogData,greeting } from '../Name'
 import './nav.css'
 
 class Nav extends Component {
     render() {
+      let skill ="Skill";
+      if(BlogData.show_Blog){
+        skill= "Blog"
+      }
+      let logo = <h2>{greeting.logo_name}</h2>;
+      if(greeting.logo_img_show){
+        logo = <img src={greeting.logo_img} alt={greeting.logo_name} />
+      }
+
+      
       return (
         <div>
           <header className="header">
             <NavLink to="/" tag={Link} className="logo">
-            <img src={vimal} alt="vimal" />
+            {logo}
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
@@ -68,7 +78,7 @@ class Nav extends Component {
                   onMouseEnter={(event) => onMouseEnter(event)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Skill
+                  {skill}
                 </NavLink>
               </li>
               <li>
@@ -92,11 +102,11 @@ class Nav extends Component {
   export default Nav;
   const onMouseEnter = (event, color) => {
     const el = event.target;
-    el.style.fontWeight = 'bold';
+    el.style.backgroundColor = "#e6e6e6";
   };
   
   const onMouseOut = (event) => {
     const el = event.target;
-    el.style.fontWeight = 'normal';
+    el.style.backgroundColor = "transparent";
   };
   
